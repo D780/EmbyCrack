@@ -2,7 +2,7 @@
 
 ## Feature
 
-- Crack emby premiere
+- Crack Emby premiere
 - Modify the default plugin source to speed up the download of plugins for Chinese users
 - Docker support
 
