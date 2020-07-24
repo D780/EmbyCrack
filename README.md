@@ -1,4 +1,4 @@
-# EmbyCracked
+# EmbyCrack
 [English Version](https://github.com/YukiCoco/EmbyCrack/blob/master/README-EN.md)
 ## Feature
 + 破解 Emby 高级版验证
