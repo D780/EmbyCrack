@@ -46,7 +46,7 @@ PC 浏览器：安装 URLRedirector https://chrome.google.com/webstore/detail/ur
 原始地址 https://mb3admin.com ，目标地址 http://crackemby.neko.re ，然后确认并保存，别忘了勾选重定向。
 
 输入任意字符后这样显示，就是破解完成了。
-https://neko.re/wp-content/uploads/2020/07/QQ20200724-105359-1024x650.png
+(https://neko.re/wp-content/uploads/2020/07/QQ20200724-105359-1024x650.png)
 Android & TV：使用 Emby 破解版本
 至此，破解工作全部结束，Enjoy~
 
