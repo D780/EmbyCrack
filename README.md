@@ -22,3 +22,25 @@
 
 
 + 详细使用方法移步[这里](https://neko.re/archives/128.html)
+
+### 服务端破解
++注意：如果以前使用其他破解方案，必须将系统的 hosts 的 mb3admin.com www.mb3admin.com 条目删除，否则破解不会生效
+
++简要方法：只需要将 破解程序集 替换原有文件即完成破解，原有文件地址为 system/System.Net.Http.dll，或使用 docker 直接安装破解版。
+
+### 具体方法：
+
+Linux : systemctl stop emby-server.service 结束 emby 进程，ps -aux | grep "emby" 找到 emby 我的 emby 所在目录为（见下文） /opt/emby-server/system/，使用 wget -O /opt/emby-server/system/System.Net.Http.dll 'https://github.com/YukiCoco/EmbyCrack/raw/master/assembly/unix-x64/System.Net.Http.dll' --no-check-certificate 下载破解程序集替换原有程序，然后启动 Emby 进程 systemctl start emby-server.service
+yukino@yukino-AA-B4:~$ ps -aux | grep "emby"
+root      382423  2.3  1.8 4377788 148512 ?      Ssl  02:33   0:15 /opt/emby-server/system/EmbyServer -programdata /var/lib/emby -ffdetect /opt/emby-server/bin/ffdetect -ffmpeg /opt/emby-server/bin/ffmpeg -ffprobe /opt/emby-server/bin/ffprobe -restartexitcode 3 -updatepackage emby-server-deb_{version}_amd64.deb
+Windows：下载后替换即可。
+Docker：docker ps 得到 emby docker 的 CONTAINER ID ，然后输入 docker exec -it $CONTAINER ID /bin/sh 进入 docker 终端，wget https://github.com/YukiCoco/EmbyCrack/raw/master/assembly/unix-x64/System.Net.Http.dll 下载 dll，然后 cp System.Net.Http.dll system/ 替换原有 dll ，然后重启 emby docker 即可。
+Docker：你也可以直接安装破解版本的 Emby Docker，安装镜像使用
+yukinococo/emby_crack:unix-x64 （Unix）, yukinococo/emby_crack:windows-x64 （Windows）
+至此，服务端破解就已经生效了，接下来还需要在浏览器做一些小修改才能在 PC 上完全使用，坐和放宽 :）
+
+### 客户端破解
+注意：如果以前使用其他破解方案，必须将系统的 hosts 的 mb3admin.com www.mb3admin.com 条目删除，否则破解不会生效
+
+PC 浏览器：安装 URLRedirector 插件，添加用户规则
+原始地址 https://mb3admin.com ，目标地址 http://crackemby.neko.re ，然后确认并保存，别忘了勾选重定向。
