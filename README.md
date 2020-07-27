@@ -42,5 +42,13 @@ yukinococo/emby_crack:unix-x64 （Unix）, yukinococo/emby_crack:windows-x64 （
 ### 客户端破解
 注意：如果以前使用其他破解方案，必须将系统的 hosts 的 mb3admin.com www.mb3admin.com 条目删除，否则破解不会生效
 
-PC 浏览器：安装 URLRedirector 插件，添加用户规则
+PC 浏览器：安装 URLRedirector https://chrome.google.com/webstore/detail/urlredirector/maolmdhneopinciaokgohljhpdedekee 插件，添加用户规则
 原始地址 https://mb3admin.com ，目标地址 http://crackemby.neko.re ，然后确认并保存，别忘了勾选重定向。
+
+输入任意字符后这样显示，就是破解完成了。
+https://neko.re/wp-content/uploads/2020/07/QQ20200724-105359-1024x650.png
+Android & TV：使用 Emby 破解版本
+至此，破解工作全部结束，Enjoy~
+
+高级应用
+服务端获取插件源已经替换为我的，但是后台显示插件图片采用的是 https://raw.githubusercontent.com 这个节点，国内访问速度很慢，建议加入到自己的代理白名单。
